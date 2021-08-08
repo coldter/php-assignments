@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Hello</title>
+	<title>Factorial Calculator</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -32,19 +32,19 @@
 		<div class="wrap-contact100">
 			<form action="" method="GET">
 				<span class="contact100-form-title">
-					Hello Message
+					Factorial Calculator
 				</span>
 
-				<label class="label-input100" for="name">Enter Your Name</label>
+				<label class="label-input100" for="number">Enter An Integer</label>
 				<div class="wrap-input100">
-					<input id="name" class="input100" type="text" name="name" required="required" placeholder="e.g.  Kuldeep">
+					<input id="number" min="0" class="input100" type="number" name="number" required="required" placeholder="e.g.  0">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="container-contact100-form-btn">
 					<button class="contact100-form-btn" type="submit">
 						<span>
-							Submit
+							Calculate
 							<i class="zmdi zmdi-arrow-right m-l-8"></i>
 						</span>
 					</button>
@@ -55,22 +55,34 @@
 																	php
 				 ------------------------------------------------------------------>
 				<?php
-				class Hello{
-					private $name;
+				class Factorial{
+					private $n;
 
-					public function __construct($arg_name)
+					public function __construct($arg_num)
 					{
-						$this->name = $arg_name;
+						$this->n = $arg_num;
 					}
-					public function print_msg(){
-						echo "Hello👋  All, I'm <b class=\"name\">", $this->name, "</b>";
-					}
+					public function result(){
+						$result = 1;
+						if($this->n == 0){
+							echo "<hr>$this->n! = <b class=\"name\">", $result, "</b>";
+						}
+						else{
+							for($i = $this->n; $i > 0; --$i){
+								$result *= $i;
+							}
+
+							echo "<hr>$this->n! = <b class=\"name\">", $result, "</b>";
+						}
+				}
 				}
 
-					if(isset($_GET['name']) && !empty($_GET['name'])){
-						$obj = new Hello($_GET['name']);
+					if(isset($_GET['number']) && $_GET['number'] >= 0){
+						$obj = new Factorial($_GET['number']);
 
-						$obj->print_msg();
+						$obj->result();
+					}elseif(isset($_GET['number']) && $_GET['number'] < 0){
+						echo  "<hr>",$_GET['number'],"! = Undefined";
 					}
 				?>
 				<!------------------------------------------------------------------
