@@ -200,6 +200,11 @@ iframe {
   padding-bottom: 20px;
 }
 
+b.name {
+  font-family: Raleway-bold;
+  font-size: 28px;
+}
+
 /*------------------------------------------------------------------
 [ Input ]*/
 
@@ -218,7 +223,7 @@ iframe {
 
 .label-input100 {
   font-family: Raleway-SemiBold;
-  font-size: 13px;
+  font-size: 18px;
   color: #555555;
   line-height: 1.5;
   text-transform: uppercase;
