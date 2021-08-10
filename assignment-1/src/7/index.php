@@ -17,10 +17,6 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="../assets/vendor/animsition/css/animsition.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../assets/vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../assets/vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="../assets/css/util.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/main.css">
 <!--===============================================================================================-->
@@ -41,7 +37,7 @@
 			
 				<label class="label-input100" for="val">Enter Your Value Of Radius</label>
 				<div class="wrap-input100">
-					<input id="val" min="0" class="input100" type="txt" name="val" required="required" placeholder="e.g.  1.5">
+					<input id="val" min="0" class="input100" type="txt" name="val" required="required" placeholder="e.g.  1">
 					<span class="focus-input100"></span>
 				</div>
 
