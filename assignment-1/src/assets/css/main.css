@@ -1,25 +1,20 @@
-
-
-
-
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
 @font-face {
   font-family: Raleway-SemiBold;
-  src: url('../fonts/raleway/Raleway-SemiBold.ttf'); 
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpbCIPrE.woff2) format('woff2'); 
 }
 
 @font-face {
   font-family: Raleway-Bold;
-  src: url('../fonts/raleway/Raleway-Bold.ttf'); 
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pbCIPrE.woff2) format('woff2'); 
 }
 
 @font-face {
   font-family: Raleway-Black;
-  src: url('../fonts/raleway/Raleway-Black.ttf'); 
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtzpbCIPrE.woff2) format('woff2'); 
 }
-
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
